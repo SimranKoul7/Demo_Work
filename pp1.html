@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Tech_Sale Product_Page</title>
+		<link rel="stylesheet" type="text/css" href="sheet1.css" />
+		<link rel=>
+	</head>
+	
+	<body class="body_firstpage">
+		<div id="main_page_logo">
+			<img src="car1.jpg" class="imglogo" />
+			<header id="h">
+				<h1>Tech_Sale</h1>
+			</header>
+			<img src="bike1.jpg" class="imglogo" />
+		</div>
+		
+		<script type="text/javascript">
+			function Select1(){
+				var x1 = document.getElementsByName("type")
+				
+				if(x1[0].checked) {
+					document.form_second.action = "bike1.html";
+				}
+				if(x1[1].checked) {
+					document.form_second.action = "scooter1.html";
+				}
+			}
+		</script>
+		
+		<h1 class="header1">Welcome To Tech_Sale Products!</h1>
+		
+		<h2 class="header2">Filter on Type</h2>
+		<p class="para">Choose if you want a specific filter</p>
+		<form class="form1" name="form_second" action="Select1()">
+			<input type="radio" name="type" value="Bike" onclick="Select1()" /> Bike <br />
+			<input type="radio" name="type" value="Scooter" onclick="Select1()" /> Scooter <br />
+			<br/>
+			<input type="submit" value="Filter" onclick="Select1()" />
+		</form>
+		
+		<div class="out_box">
+			<div class="inbox1">
+				<h2 class="header2">Bike</h2>
+				<img src="http://www.ridobiko.com/sample_images/activa.png" class="imgm" />
+				<h2 class="header2">Activa</h2>
+				<br />
+				<table class="tablem">
+					<caption align="bottom">Details</caption>
+					<tbody>
+					<tr>
+						<td>Rent/Day</td>
+						<td>400</td>
+					</tr>
+					<tr>
+						<td>Deposit</td>
+						<td>2000</td>
+					</tr>
+					<tr>
+						<td>Vehicle Type</td>
+						<td>Scooter</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+						
+			<div class="inbox2">
+				<h2 class="header2">Bike</h2>
+				<img src="http://www.ridobiko.com/sample_images/fz.png" class="imgm" />
+				<h2 class="header2">FZ</h2>
+				<br />
+				<table class="tablem">
+					<caption align="bottom">Details</caption>
+					<tbody>
+					<tr>
+						<td>Rent/Day</td>
+						<td>700</td>
+					</tr>
+					<tr>
+						<td>Deposit</td>
+						<td>2000</td>
+					</tr>
+					<tr>
+						<td>Vehicle Type</td>
+						<td>Bike</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<footer id="f">
+			For further details - Contact : 4563210287 or Mail : abc@gmail.com
+		</footer>
+	
+	</body>
+
+</html>
